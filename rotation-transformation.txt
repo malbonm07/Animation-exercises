@@ -1,0 +1,36 @@
+HTML:
+
+<body>
+  <div class="container">
+    <div class="cuadrado">Hola</div>
+  </div>
+</body>
+
+css:
+
+body {
+  background: #80bfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid black;
+}
+.container:hover .cuadrado{
+  /*transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);*/
+  /*transform: rotate3d(x, y, z, rotate)*/
+  transform: rotate3d(1, 1, 1, 45deg)
+}
+.cuadrado {
+  background: green;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 5s;
+}
