@@ -44,3 +44,16 @@ export function preventscroll() {
     document.onkeydown = null;
   });
 } 
+
+
+<script>
+import { preventscroll } from "./../hooks/preventscroll.js";
+...
+
+export default {
+  ...
+  hooks() {
+    preventscroll();
+  }
+}
+</script>
